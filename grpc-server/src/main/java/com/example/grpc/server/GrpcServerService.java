@@ -20,7 +20,7 @@ public class GrpcServerService {
 
     // Async Unary 용 코드
     // Async 동작 확인을 위해 Thread.sleep()으로 지연 시간을 준 것 외에는 Blocking Unary와 동일
-    @Override
+
     public void unaryHello(Request request, StreamObserver<Response> responseObserver) {
         logger.info("Unary 메시지 왔다: " + request.getClientName());
 
