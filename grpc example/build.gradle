@@ -19,6 +19,11 @@ repositories {
 }
 
 dependencies {
+
+    implementation group: 'io.grpc', name: 'grpc-protobuf', version: '1.39.0'
+    implementation group: 'io.grpc', name: 'grpc-stub', version: '1.39.0'
+    implementation group: 'io.grpc', name: 'grpc-netty', version: '1.39.0'
+
     implementation 'org.springframework.boot:spring-boot-starter-web'
     compileOnly 'org.projectlombok:lombok'
     annotationProcessor 'org.projectlombok:lombok'
@@ -28,3 +33,4 @@ dependencies {
 test {
     useJUnitPlatform()
 }
+
