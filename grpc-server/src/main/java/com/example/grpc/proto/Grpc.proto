@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+option java_multiple_files = true;
+option java_outer_classname = "GrpcProto";
+
+package com.example.grpc.proto;
+
+message Request {
+  string WelcomeMessage = 1;
+}
+
+message Response {
+  string welcomeMessage = 1;
+}
+
+service
