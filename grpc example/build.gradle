@@ -23,6 +23,7 @@ dependencies {
     implementation group: 'io.grpc', name: 'grpc-protobuf', version: '1.39.0'
     implementation group: 'io.grpc', name: 'grpc-stub', version: '1.39.0'
     implementation group: 'io.grpc', name: 'grpc-netty', version: '1.39.0'
+    compileOnly 'org.apache.tomcat:annotations-api:6.0.53'
 
     implementation 'org.springframework.boot:spring-boot-starter-web'
     compileOnly 'org.projectlombok:lombok'
